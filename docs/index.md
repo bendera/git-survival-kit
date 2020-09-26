@@ -42,19 +42,22 @@ git commit --amend --no-edit --author="John Doe <john@example.org>"
 
 ## Undoing things
 
-### Reverting commits
+```bash
+# Creates a new commit which reverts the changes of 2b504be
+git revert 2b504be
 
-`git revert 2b504be` revert a commit<br>
-`git commit --amend -m "This is the correct message"`<br>
-```
+git reset --hard
+git reset
+git reset --soft HEAD~1
+
 git add some/changed/file.ext
 git commit --amend -m "commit message"
 ```
 
-### Editing author in multiple commits
-
-```shell
-# bash comment example
+<details>
+    <summary>Editing author in multiple commits</summary>
+    <p>
+```bash
 git filter-branch --env-filter '
 WRONG_EMAIL="wrong@example.com"
 NEW_NAME="New Name Value"
@@ -72,10 +75,12 @@ then
 fi
 ' --tag-name-filter cat -- --branches --tags
 ```
+    </p>
+</details>
 
 ## History
 
-```
+```bash
 # Search in commit messages
 git log --grep="foo"
 
