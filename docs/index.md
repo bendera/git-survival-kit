@@ -75,7 +75,21 @@ fi
 
 ## History
 
-`git log --grep="foo"` search pattern in commit messages
+```
+# Search in commit messages
+git log --grep="foo"
+
+# Example result:
+# * 3823c9b 2020-09-26 | Initial commit [John Doe]
+git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short
+
+# More examples
+git log --pretty=oneline --max-count=2
+git log --pretty=oneline --since="5 minutes ago"
+git log --pretty=oneline --until="5 minutes ago"
+git log --pretty=oneline --author="John Doe"
+git log --pretty=oneline --all
+```
 
 ## Comparing branches and revisions
 
