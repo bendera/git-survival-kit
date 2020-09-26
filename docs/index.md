@@ -57,6 +57,7 @@ git commit --amend -m "commit message"
 <details>
     <summary>Editing author in multiple commits</summary>
     <p>
+
 ```bash
 git filter-branch --env-filter '
 WRONG_EMAIL="wrong@example.com"
@@ -75,7 +76,8 @@ then
 fi
 ' --tag-name-filter cat -- --branches --tags
 ```
-    </p>
+
+</p>
 </details>
 
 ## History
