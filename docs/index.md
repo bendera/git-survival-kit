@@ -22,6 +22,9 @@ Edit ```.git/info/exclude```<br>
 ## Branches
 
 ```bash
+# create a new branch
+git checkout -b branch_name
+
 # search for "branch_name" in all branches
 git branch -a | grep branch_name
 
