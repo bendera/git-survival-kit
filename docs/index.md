@@ -11,6 +11,8 @@ git config [--global] alias.bar "reset HEAD --"
 
 # Set Visual Studio Code as default editor
 git config [--global] core.editor "code --wait"
+# or
+git config [--global] core.editor "C:\Users\<username>\AppData\Local\Programs\Microsoft VS Code\Code.exe --wait"
 ```
 
 ### Ignore files locally
@@ -20,6 +22,9 @@ Edit ```.git/info/exclude```<br>
 ## Branches
 
 ```bash
+# search for "branch_name" in all branches
+git branch -a | grep branch_name
+
 # delete local branch
 git branch -d local_branch_name
 
@@ -28,6 +33,9 @@ git push origin -d remote_branch_name
 
 # delete branches which no longer exist on the remote
 git fetch -p
+
+# safer alternative of force push
+git push --force-with-lease
 ```
 
 ## Staging and committing
@@ -46,8 +54,8 @@ git commit --amend --no-edit --author="John Doe <john@example.org>"
 # Creates a new commit which reverts the changes of 2b504be
 git revert 2b504be
 
-git reset --hard
 git reset
+git reset --hard
 git reset --soft HEAD~1
 
 git add some/changed/file.ext
@@ -78,5 +86,10 @@ git log --pretty=oneline --all
 
 ## Stash
 
-`git stash list`<br>
-`git stash push -u -m "Foo bar"` stash with message, include untracked
+```bash
+# list stashed changes
+git stash list
+
+# stash with message, include untracked
+git stash push -u -m "Foo bar"
+```
