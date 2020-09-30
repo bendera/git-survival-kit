@@ -95,4 +95,8 @@ git stash list
 
 # stash with message, include untracked
 git stash push -u -m "Foo bar"
+
+git stash pop
+
+git stash apply
 ```
