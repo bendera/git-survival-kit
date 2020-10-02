@@ -1,15 +1,22 @@
 ## Configuration
 
+### Configure name and email
+
 ```bash
-# Configure name and email
 git config [--global] user.name "John Doe"
 git config [--global] user.email "jdoe@example.org"
+```
 
-# Configure aliases
+### Configure aliases
+
+```bash
 git config [--global] alias.foo checkout
 git config [--global] alias.bar "reset HEAD --"
+```
 
-# Set Visual Studio Code as default editor
+### Set Visual Studio Code as default editor
+
+```bash
 git config [--global] core.editor "code --wait"
 # or
 git config [--global] core.editor "C:\Users\<username>\AppData\Local\Programs\Microsoft VS Code\Code.exe --wait"
