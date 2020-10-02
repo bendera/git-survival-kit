@@ -5,7 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% seo %}
+    <title>{{ site.title }}</title>
+    <meta name="generator" content="Jekyll v3.9.0" />
+    <meta property="og:title" content="{{ site.title }}" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="description" content="An arbitrary selected collection of GIT commands" />
+    <meta property="og:description" content="An arbitrary selected collection of GIT commands" />
+    <link rel="canonical" href="{{ "/" | absolute_url }}" />
+    <meta property="og:url" content="{{ "/" | absolute_url }}" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <script type="application/ld+json">
+    {"@type":"WebSite","headline":"{{ site.title }}","url":"{{ "/" | absolute_url }}","description":"An arbitrary selected collection of GIT commands","name":"Git Survival Kit (wip)","@context":"https://schema.org"}</script>
+
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
