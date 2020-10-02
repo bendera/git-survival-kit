@@ -160,13 +160,13 @@ git stash clear
 
 ## VI
 
-### Quit from VI
+### Quit
 
 Commands | Description
 --- | ---
-Press <kbd>Esc</kbd>, type `:q`, press <kbd>Enter</kbd> | quit VI
-Press <kbd>Esc</kbd>, type `:q!`, <kbd>Enter</kbd> | quit VI without saving
-Press <kbd>Esc</kbd>, type `:wq`, press <kbd>Enter</kbd> | save and quit
+Press <kbd>Esc</kbd>, type `:q`, press <kbd>Enter</kbd> | Quit
+Press <kbd>Esc</kbd>, type `:q!`, <kbd>Enter</kbd> | Quit without saving
+Press <kbd>Esc</kbd>, type `:wq`, press <kbd>Enter</kbd> | Save and quit
 
 ### Switch between modes
 
@@ -182,5 +182,3 @@ Commands | Description
 --- | ---
 Press <kbd>Esc</kbd>, type `o` | Insert a blank line below the current line
 Press <kbd>Esc</kbd>, type `O` | Insert a blank line above the current line
-
-### Search
