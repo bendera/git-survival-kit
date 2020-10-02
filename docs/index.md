@@ -1,3 +1,12 @@
+## Table of contents
+
+- [Configuration](#configuration)
+- [Branches](#branches)
+- [Staging and committing](#staging-and-committing)
+- [Undoing things](#undoing-things)
+- [History](#history)
+- [Stash](#stash)
+
 ## Configuration
 
 ### Configure name and email
@@ -26,6 +35,8 @@ git config [--global] core.editor "C:\Users\<username>\AppData\Local\Programs\Mi
 
 Edit ```.git/info/exclude```<br>
 
+[Go to top](#table-of-contents)
+
 ## Branches
 
 ```bash
@@ -48,6 +59,8 @@ git fetch -p
 git push --force-with-lease
 ```
 
+[Go to top](#table-of-contents)
+
 ## Staging and committing
 
 ```bash
@@ -57,6 +70,8 @@ git add --patch foo.txt
 # Modify the author of the last commit
 git commit --amend --no-edit --author="John Doe <john@example.org>"
 ```
+
+[Go to top](#table-of-contents)
 
 ## Undoing things
 
@@ -71,6 +86,8 @@ git reset --soft HEAD~1
 git add some/changed/file.ext
 git commit --amend -m "commit message"
 ```
+
+[Go to top](#table-of-contents)
 
 ## History
 
@@ -89,6 +106,8 @@ git log --pretty=oneline --until="5 minutes ago"
 git log --pretty=oneline --author="John Doe"
 git log --pretty=oneline --all
 ```
+
+[Go to top](#table-of-contents)
 
 ## Comparing branches and revisions
 
@@ -115,3 +134,5 @@ git stash drop
 
 git stash clear
 ```
+
+[Go to top](#table-of-contents)
