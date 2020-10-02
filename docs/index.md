@@ -39,10 +39,16 @@ Edit ```.git/info/exclude```<br>
 
 ## Branches
 
+### Checkout
+
 ```bash
 # create a new branch
 git checkout -b branch_name
+```
 
+### Delete
+
+```bash
 # search for "branch_name" in all branches
 git branch -a | grep branch_name
 
@@ -54,7 +60,11 @@ git push origin -d remote_branch_name
 
 # delete branches which no longer exist on the remote
 git fetch -p
+```
 
+### Push
+
+```bash
 # safer alternative of force push
 git push --force-with-lease
 ```
@@ -66,23 +76,34 @@ git push --force-with-lease
 ```bash
 # staging patches
 git add --patch foo.txt
-
-# Modify the author of the last commit
-git commit --amend --no-edit --author="John Doe <john@example.org>"
 ```
 
 [Go to top](#table-of-contents)
 
 ## Undoing things
 
+### Revert
+
 ```bash
 # Creates a new commit which reverts the changes of 2b504be
 git revert 2b504be
+```
 
+### Reset
+
+```bash
 git reset
 git reset --hard
 git reset --soft HEAD~1
+```
 
+### Amend
+
+```bash
+# Modify the author of the last commit, keep the message untouched
+git commit --amend --no-edit --author="John Doe <john@example.org>"
+
+# Add a left out file to the last commit
 git add some/changed/file.ext
 git commit --amend -m "commit message"
 ```
