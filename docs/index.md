@@ -157,3 +157,30 @@ git stash clear
 ```
 
 [Go to top](#table-of-contents)
+
+## VI
+
+### Quit from VI
+
+Commands | Description
+--- | ---
+Press <kbd>Esc</kbd>, type `:q`, press <kbd>Enter</kbd> | quit VI
+Press <kbd>Esc</kbd>, type `:q!`, <kbd>Enter</kbd> | quit VI without saving
+Press <kbd>Esc</kbd>, type `:wq`, press <kbd>Enter</kbd> | save and quit
+
+### Switch between modes
+
+Commands | Description
+--- | ---
+Press <kbd>Esc</kbd> | Command mode
+Press <kbd>Esc</kbd>, type `i` | Switch to insert mode
+Press <kbd>Esc</kbd>, type `R` | Switch to replace mode
+
+### Editing
+
+Commands | Description
+--- | ---
+Press <kbd>Esc</kbd>, type `o` | Insert a blank line below the current line
+Press <kbd>Esc</kbd>, type `O` | Insert a blank line above the current line
+
+### Search
