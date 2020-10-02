@@ -6,6 +6,7 @@
 - [Undoing things](#undoing-things)
 - [History](#history)
 - [Stash](#stash)
+- [VI](#vi)
 
 ## Configuration
 
@@ -182,3 +183,5 @@ Commands | Description
 --- | ---
 Press <kbd>Esc</kbd>, type `o` | Insert a blank line below the current line
 Press <kbd>Esc</kbd>, type `O` | Insert a blank line above the current line
+
+[Go to top](#table-of-contents)
