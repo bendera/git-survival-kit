@@ -90,13 +90,21 @@ git log --pretty=oneline --all
 ## Stash
 
 ```bash
-# list stashed changes
-git stash list
-
 # stash with message, include untracked
 git stash push -u -m "Foo bar"
 
+# list stashed changes
+git stash list
+
+# Apply stash
+git stash apply
+git stash apply "stash@{2}"
+# Git 2.11 and above:
+git stash apply 2
+
 git stash pop
 
-git stash apply
+git stash drop
+
+git stash clear
 ```
