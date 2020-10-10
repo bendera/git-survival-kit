@@ -96,6 +96,10 @@ git revert 2b504be
 git reset
 git reset --hard
 git reset --soft HEAD~1
+
+# Reset branch to the state of remote master
+git fetch origin
+git reset --hard origin/master
 ```
 
 ### Amend
