@@ -47,6 +47,12 @@ Edit ```.git/info/exclude```<br>
 git checkout -b branch_name
 ```
 
+### Rename
+
+```bash
+git branch -m <newname>
+```
+
 ### Delete
 
 ```bash
