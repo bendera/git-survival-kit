@@ -180,7 +180,7 @@ git push
 # Revert the last commit, continue the work 
 git reset --soft HEAD^
 
-# Commit the complete work
+# Commit the completed work
 git add .
 git commit -m "added a cool feature"
 
