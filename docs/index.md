@@ -167,6 +167,27 @@ git stash drop
 git stash clear
 ```
 
+### "Remote stash"
+
+Save the incomplete work to the remote server on your branch.
+
+```bash
+# Nothing special, save the current state to the remote
+git add .
+git commit -m "wip"
+git push
+
+# Revert the last commit, continue the work 
+git reset --soft HEAD^
+
+# Commit the complete work
+git add .
+git commit -m "added a cool feature"
+
+# Be careful! This command will rewrite the history of the remote branch.
+git push --force-with-lease
+```
+
 [Go to top](#table-of-contents)
 
 ## VI
