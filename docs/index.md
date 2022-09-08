@@ -45,6 +45,8 @@ Edit ```.git/info/exclude```<br>
 ```bash
 # create a new branch
 git checkout -b branch_name
+
+git checkout <hashname>
 ```
 
 ### Rename
